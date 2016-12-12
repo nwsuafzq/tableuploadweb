@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>PLVDS</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+	<servlet-name>LoginServlet</servlet-name>
+	<servlet-class>nwsuaf.plvds.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>LoginServlet</servlet-name>
+	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>LogoutServlet</servlet-name>
+	<servlet-class>nwsuaf.plvds.servlet.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>LogoutServlet</servlet-name>
+	<url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>AddUserServlet</servlet-name>
+	<servlet-class>nwsuaf.plvds.servlet.AddUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>AddUserServlet</servlet-name>
+	<url-pattern>/user/addUser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>TeacherListServlet</servlet-name>
+	<servlet-class>nwsuaf.plvds.servlet.TeacherListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>TeacherListServlet</servlet-name>
+	<url-pattern>/user/teacherList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>UserListServlet</servlet-name>
+	<servlet-class>nwsuaf.plvds.servlet.UserListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>UserListServlet</servlet-name>
+	<url-pattern>/user/userList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>StuListServlet</servlet-name>
+	<servlet-class>nwsuaf.plvds.servlet.StuListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>StuListServlet</servlet-name>
+	<url-pattern>/user/stuList</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>InitPwdServlet</servlet-name>
+	<servlet-class>nwsuaf.plvds.servlet.InitPwdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>InitPwdServlet</servlet-name>
+	<url-pattern>/user/initPwd</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>ChangePwdServlet</servlet-name>
+	<servlet-class>nwsuaf.plvds.servlet.ChangePwdServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>ChangePwdServlet</servlet-name>
+	<url-pattern>/user/chPwd</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>ArgCommTableServlet</servlet-name>
+	<servlet-class>nwsuaf.plvds.servlet.ArgCommTableServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>ArgCommTableServlet</servlet-name>
+	<url-pattern>/argcomm</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>ImportTableServlet</servlet-name>
+	<servlet-class>nwsuaf.plvds.servlet.ImportTableServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>ImportTableServlet</servlet-name>
+	<url-pattern>/import</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>ExportTableServlet</servlet-name>
+	<servlet-class>nwsuaf.plvds.servlet.ExportTableServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>ExportTableServlet</servlet-name>
+	<url-pattern>/export</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>DeleteTableServlet</servlet-name>
+	<servlet-class>nwsuaf.plvds.servlet.DeleteTableServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>DeleteTableServlet</servlet-name>
+	<url-pattern>/deleteByYear</url-pattern>
+  </servlet-mapping>
+</web-app>

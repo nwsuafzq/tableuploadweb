@@ -1,0 +1,107 @@
+@CHARSET "UTF-8";
+* {
+	outline:none!important;
+}
+.topnav {
+	height:100px;
+	background:#08C;
+}
+ul.topnav li.nettips {
+	height:100px;
+	line-height:100px;
+	height:100%;
+	background:#08C;
+	padding:0 50px;
+	font-size:25px;
+	font-family:"微软雅黑";
+	color:white;
+}
+
+.nav .nav-header {
+	margin-left:-20px;
+	font-size:15px;
+}
+.nav-list {
+	padding-right:6px!important;
+}
+.nav-list > li > a {
+	margin:3px -10px!important;
+	padding:3px 10px!important;
+}
+#search-area {
+	padding:0 20px 0 0;
+	margin:0 0 10px;
+	text-align:right;
+}
+#search-area form {
+	display:inline-block;
+	float:left;
+	margin:0;
+}
+#stext {
+	border-radius:0;
+}
+#slt-item {
+	width:100px;
+	border-top-left-radius:15px;
+	border-bottom-left-radius:15px;
+	border-top-right-radius:0;
+	border-bottom-right-radius:0;
+	border-right:none;
+}
+#sresult {
+	border-top-left-radius:0;
+	border-bottom-left-radius:0;
+	border-left:none;
+}
+#setuf {
+	cursor:pointer;
+}
+#setuf span {
+	display:inline-block;
+	width:12px;
+	text-align:center;
+}
+#folder-menu {
+	display:none;
+}
+
+.span10 h3 {
+	background:#08C;
+	height:40px;
+	line-height:40px;
+	margin:0;
+	font-size:16px;
+	color:white;
+	font-family:微软雅黑;
+	padding:0 10px;
+}
+.self-form {
+	width:400px;
+	margin:10px auto 0;
+	font-family:"微软雅黑";
+}
+.self-form .form-group {
+	height:50px;
+	line-height:50px;
+}
+.self-form .form-label {
+	display:inline-block;
+	margin:0;
+	height:50px;
+	width:80px;
+	text-align:right;
+	padding-right:15px;
+	font-weight:bold;
+}
+.self-form .col-sm-10 {
+	display:inline-block;
+}
+.self-form .radio-inline {
+	display:inline-block;
+	margin:0;
+	margin-right:10px;
+}
+.self-form input[type=radio] {
+	margin:0;
+}

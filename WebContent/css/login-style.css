@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+body {
+	background:#DEF;
+}
+label {
+	display:inline!important;
+	margin:0 5px;
+}
+.login {
+	margin:100px 0;
+	background:#EEE;
+	border-radius:20px;
+	box-shadow:3px 3px 5px rgba(100,100,100,0.9);
+}
+.login h3 {
+	font-family:"微软雅黑";
+	font-size:20px;
+}

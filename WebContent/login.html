@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登陆 - 作物生境模拟数据库系统</title>
+<link href="/PLVDS/css/bootstrap-combined.min.css" type="text/css" rel="stylesheet">
+<link href="/PLVDS/css/login-style.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="/PLVDS/js/jquery.min.js"></script>
+<script type="text/javascript" src="/PLVDS/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/PLVDS/js/login.js"></script>
+<style type="text/css">
+.control-label {
+	width:80px!important;
+}
+.controls {
+	margin-left:100px!important;
+}
+</style>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span4"></div>
+		<div class="span4 login">
+			<h3 class="text-center">作物生境模拟数据库系统</h3>
+			<form class="form-horizontal" action="" method="post">
+				<div class="control-group">
+					<label class="control-label" for="inputEmail">用户名</label>
+					<div class="controls">
+						<input id="inputEmail" name="username" value="super" type="text" placeholder="Username" />
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="inputPassword">密码</label>
+					<div class="controls">
+						<input id="inputPassword" name="password" value="123456" type="password" placeholder="Password" />
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="control-label" for="userType">用户类型</label>
+					<div class="controls">
+						<label class="checkbox-inline"><input name="usertype" checked type="radio" value="I" /> 超级用户</label>
+						<label class="checkbox-inline"><input name="usertype" type="radio" value="T" /> 教师</label>
+						<label class="checkbox-inline"><input name="usertype" type="radio" value="S" /> 学生</label>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="controls">
+						<button type="button" id="loginBtn" class="btn btn-primary">登陆</button>
+					</div>
+				</div>
+			</form>
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
+				aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+		                  		&times;
+		            		</button>
+		         			<h4 class="modal-title" id="myModalLabel">来自网页的消息：</h4>
+						</div>
+		        		<div class="modal-body"><span style="color:#F63;" id="tip-con">用户名/密码/用户类型 不能为空</span></div>
+		        		<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="span4"></div>
+	</div>
+</div>
+</body>
+</html>
